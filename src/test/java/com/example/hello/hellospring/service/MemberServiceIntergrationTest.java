@@ -14,15 +14,15 @@ import static org.junit.jupiter.api.Assertions.*;
 @Transactional
 class MemberServiceIntergrationTest {
 
-    MemberService memberService;
-    MemberRepository memberRepository;
-
+    @Autowired MemberService memberService;
+    @Autowired MemberRepository memberRepository;
+    /*
     @Autowired
     public MemberServiceIntergrationTest(MemberService memberService, MemberRepository memberRepository) {
         this.memberService = memberService;
         this.memberRepository = memberRepository;
     }
-
+    */
     @Test
     void join() {
         //given
